@@ -2,9 +2,9 @@
 import alpaca_trade_api as tradeapi
 
 # Constants
-BASE_URL = "https://paper-api.alpaca.markets" # Use the appropriate URL for live trading
-ALPACA_API_KEY = "<YOUR ALPACA API KEY>"
-ALPACA_SECRET_KEY = "<YOUR ALPACA SECRET KEY>"
+BASE_URL = "https://paper-api.alpaca.markets/v2/account" # Use the appropriate URL for live trading
+ALPACA_API_KEY = "PKLA1Y2K5IDPXRV9DESD"
+ALPACA_SECRET_KEY = "yXunEQ7tlzKg9uDhAEMbnmPjlHz3PLJUCDo6gC5e"
 SYMBOL = "AAPL"  # Example symbol (use placeholder)
 
 # Authenticate and establish connection
