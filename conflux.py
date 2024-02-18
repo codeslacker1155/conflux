@@ -2,7 +2,7 @@
 import alpaca_trade_api as tradeapi
 
 # Constants
-BASE_URL = "https://paper-api.alpaca.markets/v2/account" # Use the appropriate URL for live trading
+BASE_URL = "https://paper-api.alpaca.markets" # Use the appropriate URL for live trading
 APCA_API_KEY_ID = "PKWM9RPMHYSCR9A2B6KE"
 APCA_API_SECRET_KEY = "63wBxUsXC5XDo2Sl1D4tvmvcYJqmgZrFOmvlp0Qy"
 SYMBOL = "AAPL"  # Example symbol (use placeholder)
@@ -37,4 +37,4 @@ def execute_covered_call(symbol, qty):
 
 # Execute the strategies
 execute_protected_put(SYMBOL, 10)
-execute_covered_call(SYMBOL, 10)
+#execute_covered_call(SYMBOL, 10)
