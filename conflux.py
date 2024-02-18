@@ -10,6 +10,11 @@ SYMBOL = "AAPL"  # Example symbol (use placeholder)
 # Authenticate and establish connection
 api = tradeapi.REST(key_id=APCA_API_KEY_ID, secret_key=APCA_API_SECRET_KEY, base_url=BASE_URL, api_version='v2')
 
+
+# Function to gather account information
+account = api.get_account()
+#print(account)
+
 # Function to execute a protected put
 def execute_protected_put(symbol, qty):
     # Step 1: Buy the stock
