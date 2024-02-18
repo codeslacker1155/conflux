@@ -3,12 +3,12 @@ import alpaca_trade_api as tradeapi
 
 # Constants
 BASE_URL = "https://paper-api.alpaca.markets/v2/account" # Use the appropriate URL for live trading
-ALPACA_API_KEY = "PKLA1Y2K5IDPXRV9DESD"
-ALPACA_SECRET_KEY = "yXunEQ7tlzKg9uDhAEMbnmPjlHz3PLJUCDo6gC5e"
+APCA_API_KEY_ID = "PKWM9RPMHYSCR9A2B6KE"
+APCA_API_SECRET_KEY = "63wBxUsXC5XDo2Sl1D4tvmvcYJqmgZrFOmvlp0Qy"
 SYMBOL = "AAPL"  # Example symbol (use placeholder)
 
 # Authenticate and establish connection
-api = tradeapi.REST(key_id=ALPACA_API_KEY, secret_key=ALPACA_SECRET_KEY, base_url=BASE_URL, api_version='v2')
+api = tradeapi.REST(key_id=APCA_API_KEY_ID, secret_key=APCA_API_SECRET_KEY, base_url=BASE_URL, api_version='v2')
 
 # Function to execute a protected put
 def execute_protected_put(symbol, qty):
